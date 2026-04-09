@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: approvd-pdf-filler
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3200
+    plan: free
